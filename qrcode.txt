@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .wrapper {
+            display: flex;
+            flex: 1;
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            border: 1px solid #228b22;
+            min-width: 200px;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .sidebar .nav-link {
+            color: #000;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .sidebar .nav-link.active {
+            background-color: #28a745;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .top-bar {
+            border: 2.5px solid #228b22;
+            background-color: #d4ebda;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .content {
+            padding: 20px;
+            width: 100%;
+        }
+
+        .Admin-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .Admin-info img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .Admin-info .name {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .notification-icons .icon {
+            font-size: 2.5rem;
+            color: #228b22;
+            cursor: pointer;
+        }
+
+        .attcrd {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            width: 400px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            background-color: #f9f9f9;
+        }
+
+        .attcrd img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .attdet {
+            flex-grow: 1;
+        }
+
+        .attdet h5 {
+            margin: 0;
+        }
+
+        .attdet p {
+            margin: 0;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="Admin-info">
+            <img src="https://via.placeholder.com/50" alt="Admin Photo">
+            <div>
+                <div class="name">Micky Davila</div>
+                <div class="role">ADMIN</div>
+            </div>
+        </div>
+
+        <div class="notification-icons">
+            <i class="fas fa-bell icon"></i>
+            <i class="fas fa-cog icon"></i>
+        </div>
+    </div>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" id="dashboard-link">DASHBOARD</a>
+                </li>
+                <li class="nav-item mt-auto">
+                    <a class="nav-link" href="#">LOGOUT</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h2>Attendance Records</h2>
+            <div class="attcrd">
+                <img src="https://via.placeholder.com/60" alt="User Photo">
+                <div class="attdet">
+                    <h5>John Doe</h5>
+                    <p>Time In: 7:00 AM</p>
+                    <p>Time Out: --</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
